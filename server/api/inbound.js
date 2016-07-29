@@ -5,6 +5,7 @@ const debug = debugLib('zang.io');
 
 export default class {
     connected(req, res) {
+        debug('%s %s', req.body, req.query);
         res.end(
             `<Response>
                 <Say>This is zang.io test. You are about to execute a new call.</Say>
@@ -16,6 +17,7 @@ export default class {
     }
 
     dialed(req, res) {
+        debug('%s %s', req.body, req.query);
         res.end(
             `<Response>
                 <Say voice="woman">Hello! I am zangio caller bot! Please make request to play-audio-live so that mp3 file is played to both of us.</Say>

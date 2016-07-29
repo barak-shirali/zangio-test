@@ -22,7 +22,9 @@ export default class {
             To: dialNumber,
             From: '484-653-6381',
             Url: 'http://zangio.herokuapp.com/api/inbound/connected',
+            Method: 'GET',
             FallbackUrl: 'http://zangio.herokuapp.com/api/inbound/fallback'
+            FallbackMethod: 'GET'
         };
         zang.makeCall(params)
         .then((result) => {
