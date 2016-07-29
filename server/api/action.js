@@ -20,7 +20,7 @@ export default class {
         }
         const params = {
             To: dialNumber,
-            From: '484-653-6381'
+            From: '484-653-6381',
             Url: 'http://zangio.herokuapp.com/api/inbound/connected'
         };
         zang.makeCall(params)
