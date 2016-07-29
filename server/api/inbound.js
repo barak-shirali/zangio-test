@@ -26,8 +26,8 @@ export default class {
     fallback(req, res) {
         debug('%s %s', req.body, req.query);
         res.json({
-            req.body,
-            req.query
+            body: req.body,
+            query: req.query
         });
     };
 };
