@@ -21,6 +21,12 @@ export default class {
         res.end(
             `<Response>
                 <Say voice="woman">Hello! I am zangio caller bot! Please make request to play-audio-live so that mp3 file is played to both of us.</Say>
+                <Pause length="10"/>
+                <Say voice="woman">Hello! I am zangio caller bot! Please make request to play-audio-live so that mp3 file is played to both of us.</Say>
+                <Pause length="10"/>
+                <Say voice="woman">Hello! I am zangio caller bot! Please make request to play-audio-live so that mp3 file is played to both of us.</Say>
+                <Pause length="10"/>
+                <Say voice="woman">Please take a look at readme and try again! Bye-bye!</Say>
             </Response>`
         );
     }
