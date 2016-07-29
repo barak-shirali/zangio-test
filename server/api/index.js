@@ -1,13 +1,18 @@
 import { Router } from 'express';
-import PhoneCtlr from './phone';
+import ActionCtlr from './action';
+import InboundCtlr from './inbound';
 
 export default function() {
 	const api = Router();
 
-	const phoneController = new PhoneCtlr();
+	const actionController = new ActionCtlr();
+	const inboundController = new InboundCtlr();
 
 	// mount controller
-	api.get('/make-call', phoneController.makeCall);
+	api.get('/action/make-call', actionController.makeCall);
+	api.get('/action/play-audio', actionController.playAudio);
+	api.get('/inbound/connected', inboundController.connected);
+	api.get('/inbound/dialed', inboundController.dialed);
 
 	// perhaps expose some API metadata at the root
 	api.get('/', (req, res) => {
