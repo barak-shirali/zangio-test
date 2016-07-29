@@ -4,7 +4,7 @@
   "description": "Starter project for an ES6 RESTful Express API",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "./node_modules/.bin/babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
