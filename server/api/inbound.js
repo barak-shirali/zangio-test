@@ -21,7 +21,7 @@ export default class {
         res.end(
             `<Response>
                 <Say voice="woman">Hello! I am zangio caller bot! Mp3 file will be played now.</Say>
-                <Play loop="3">https://www.dropbox.com/s/aqn75vlgq4io9ob/myh9jorc.mp3?dl=true</Play>
+                <Play loop="3">http://zangio.herokuapp.com/audio.mp3</Play>
                 <Say>File finished! Bye!</Say>
             </Response>`
         );

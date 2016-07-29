@@ -17,6 +17,8 @@ app.use(bodyParser.json({
 	limit : '100kb'
 }));
 
+app.use(express.static, './static');
+
 // internal middleware
 app.use(middleware());
 
