@@ -1,40 +1,17 @@
-Express & ES6 REST API Boilerplate
+Zang.io Test
 ==================================
 
-[![bitHound Score](https://www.bithound.io/github/developit/express-es6-rest-api/badges/score.svg)](https://www.bithound.io/github/developit/express-es6-rest-api)
+Demo
+------------
+http://zangio.herokuapp.com/api/action/make-call?dialNumber={Your number}
 
-This is a straightforward boilerplate for building REST APIs with ES6 and Express.
+Working flow
+-------------
+- zang.io initiates a call to the dial number.
+- once you answer the call, it will dial to the zang.io number (which I added inside) so that you two can talk
+- the bot will say something and play mp3
 
-- ES6 support via [babel](https://babeljs.io)
-- REST resources as middleware via [resource-router-middleware](https://github.com/developit/resource-router-middleware)
-- CORS support via [cors](https://github.com/troygoode/node-cors)
-- Body Parsing via [body-parser](https://github.com/expressjs/body-parser)
-
-> Tip: If you are using [Mongoose](https://github.com/Automattic/mongoose), you can automatically expose your Models as REST resources using [restful-mongoose](https://git.io/restful-mongoose).
-
-Getting Started
----------------
-
-```sh
-# clone it
-git clone git@github.com:developit/express-es6-rest-api.git
-cd express-es6-rest-api
-
-# Make it your own
-rm -rf .git && git init && npm init
-
-# Install dependencies
-npm install
-
-# Run it
-PORT=8080 npm start
-
-# With nodemon:
-PORT=8080 nodemon
-```
-
-
-License
--------
-
-MIT
+Features in future:
+--------------
+- You can interrupt live call using play-audio-in-live-call
+- Also you can change your tone by specifying in inboundXML

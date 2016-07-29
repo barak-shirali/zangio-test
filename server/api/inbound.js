@@ -20,7 +20,7 @@ export default class {
         debug('%s %s', JSON.stringify(req.body), JSON.stringify(req.query));
         res.end(
             `<Response>
-                <Say voice="woman">Hello! I am zangio caller bot! Mp3 file will be played now.</Say>
+                <Say voice="woman">Hello! I am zangio caller bot! Mp3 file will be played 3 times.</Say>
                 <Play loop="3">http://zangio.herokuapp.com/audio.mp3</Play>
                 <Say>File finished! Bye!</Say>
             </Response>`
