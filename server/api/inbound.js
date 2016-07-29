@@ -9,7 +9,7 @@ export default class {
         res.end(
             `<Response>
                 <Say>This is zang.io test. You are about to execute a new call.</Say>
-                <Dial action="http://zangio.herokuapp.com/api/inbound/dialed" method="GET">484-653-6381</Dial>
+                <Dial callbackUrl="http://zangio.herokuapp.com/api/inbound/fallback" callbackMethod="GET" action="http://zangio.herokuapp.com/api/inbound/dialed" method="GET">484-653-6381</Dial>
                 <Say>We have passed the Dial. The call will now be terminated</Say>
                 <Hangup/>
             </Response>`
